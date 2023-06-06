@@ -1,0 +1,33 @@
+head section
+
+Integer getN()
+Integer getM()
+Integer getE()
+Integer isEspXTrabajador(Integer i, Integer k)
+Integer getDiasDispl(Integer i)
+Integer getDiasNecesarios(Integer j, Integer k)
+Integer getCalidadTrbj(Integer j)
+
+Integer n = getN()
+Integer m = getM()
+Integer e = getE()
+
+goal section
+
+max sum(getCalidadTrbj(j) y[j], j in 0 .. m)
+
+constraints section
+sum(isEspXTrabajador(i, k) x[i,j] , j in 0 .. m, k in 0 .. e) <= getDiasDispl(i), i in 0 .. n 
+sum(isEspXTrabajador(i, k) x[i,j], i in 0 .. n) - getDiasNecesarios(j, k) y[j] = 0, k in 0 .. e, j in 0 .. m
+
+int 
+x[i,j], i in 0 .. n, j in 0 .. m
+bin
+y[j], j in 0 .. m
+
+
+
+
+
+
+

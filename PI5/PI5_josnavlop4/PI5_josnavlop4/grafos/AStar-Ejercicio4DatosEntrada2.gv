@@ -1,0 +1,19 @@
+strict digraph G {
+  1 [ style="bold" label="Ejercicio4Vertex[cliente=3, pendientes=[0, 4, 5, 6], visitados=[1, 2, 7, 3], kms=7]" ];
+  2 [ style="bold" label="Ejercicio4Vertex[cliente=4, pendientes=[0], visitados=[1, 2, 7, 3, 5, 6, 4], kms=12]" ];
+  3 [ style="bold" label="Ejercicio4Vertex[cliente=0, pendientes=[], visitados=[1, 2, 7, 3, 5, 6, 4, 0], kms=13]" ];
+  4 [ style="bold" label="Ejercicio4Vertex[cliente=2, pendientes=[0, 3, 4, 5, 6, 7], visitados=[1, 2], kms=3]" ];
+  5 [ style="bold" label="Ejercicio4Vertex[cliente=5, pendientes=[0, 4, 6], visitados=[1, 2, 7, 3, 5], kms=8]" ];
+  6 [ style="bold" label="Ejercicio4Vertex[cliente=0, pendientes=[0, 1, 2, 3, 4, 5, 6, 7], visitados=[], kms=0]" ];
+  7 [ style="bold" label="Ejercicio4Vertex[cliente=1, pendientes=[0, 2, 3, 4, 5, 6, 7], visitados=[1], kms=2]" ];
+  8 [ style="bold" label="Ejercicio4Vertex[cliente=6, pendientes=[0, 4], visitados=[1, 2, 7, 3, 5, 6], kms=11]" ];
+  9 [ style="bold" label="Ejercicio4Vertex[cliente=7, pendientes=[0, 3, 4, 5, 6], visitados=[1, 2, 7], kms=6]" ];
+  9 -> 1 [ style="bold" label="3; 293,0" ];
+  8 -> 2 [ style="bold" label="4; 188,0" ];
+  2 -> 3 [ style="bold" label="0; -13,0" ];
+  7 -> 4 [ style="bold" label="2; 197,0" ];
+  1 -> 5 [ style="bold" label="5; 292,0" ];
+  6 -> 7 [ style="bold" label="1; 98,0" ];
+  5 -> 8 [ style="bold" label="6; 189,0" ];
+  4 -> 9 [ style="bold" label="7; 194,0" ];
+}

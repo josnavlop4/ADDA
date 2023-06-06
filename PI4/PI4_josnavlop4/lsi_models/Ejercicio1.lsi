@@ -1,0 +1,27 @@
+head section
+
+Integer getNumTipos()
+Integer getNumVariedades()
+Integer getKgdisp(Integer j)
+Integer getBeneficio(Integer i)
+Double getKgXVariedad(Integer i, Integer j)
+
+Integer n = getNumTipos()
+Integer m = getNumVariedades()
+
+goal section
+
+max sum(getBeneficio(i) x[i], i in 0 .. m)
+
+constraints section
+
+sum(getKgXVariedad(i,j) x[i], i in 0 .. m) <= getKgdisp(j), j in 0 .. n
+
+int
+
+x[i], i in 0 .. m
+
+
+
+
+
